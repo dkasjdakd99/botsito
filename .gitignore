@@ -1,0 +1,27 @@
+# Variables de entorno (token, IDs, etc.) — NUNCA subir esto
+.env
+
+# Entorno virtual
+venv/
+env/
+.venv/
+
+# Cache y archivos compilados de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Railway (por si genera algo local)
+.railway/
