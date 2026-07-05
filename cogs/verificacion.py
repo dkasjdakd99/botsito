@@ -8,6 +8,8 @@ logger = logging.getLogger(__name__)
 
 CANAL_VERIFICACION = int(os.getenv("CANAL_VERIFICACION"))
 ROL_USUARIO = int(os.getenv("ROL_USUARIO"))
+# URL de la imagen/gif de bienvenida (podés poner una URL directa a un .gif o .png)
+IMAGEN_BIENVENIDA_URL = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3lvd2N3ZDRpbTE1bnVpc3puYnM2ZDZseWlsbWJyeTY0NzJhdmUwbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DIYVI7Iz4dmnu/giphy.gif"
 
 
 class BotonVerificacion(discord.ui.View):
@@ -70,10 +72,11 @@ class Verificacion(commands.Cog):
                 return
 
             embed = discord.Embed(
-                title="Sistema de verificación",
-                description="Hola! Haz click en el botón de abajo para poder acceder al resto de los canales ;)",
+                title="﹒﹒sistema de verificación﹐ ❀",
+                description="hola! haz click en el botón de abajo para poder acceder al resto de los canales ;)",
                 color=discord.Color.green()
             )
+            embed.set_image(url=IMAGEN_BIENVENIDA_URL)
 
             await canal.send(embed=embed, view=BotonVerificacion())
             await interaction.response.send_message(

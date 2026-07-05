@@ -5,14 +5,15 @@ from discord.ext import commands
 # ⚙️ CONFIGURACIÓN
 # Editá el texto de cada regla acá abajo
 REGLAS = [
-    "**Respeta a los demás**: Sé amable. No se tolerará el acoso, los insultos, la discriminación (ya sea por género, orientación, religión, etc.) ni los discursos de odio. Queremos que este sea un espacio agradable para todos",
-    "**Se prohibe el contenido +18 (NSFW)**: Queda estrictamente prohibido compartir imágenes, videos o texto con contenido explícito, sangriento o sexual." ,
-    "**Usa correctamente los canales**: Cada canal tiene un propósito, usalos correctamente *(recuerda revisar las descripciones! 😉)*. ",
-    "**Se prohibe el Spam y las promociones no autorizadas**: Evita llenar los canales con mensajes repetitivos y/o mayúsculas excesivas. Tampoco envíes enlaces de tus redes o servidores sin permiso del staff.",
-    "**Se prohibe la toxicidad y el drama**: Evita las discusiones en los canales públicos. Las diferencias personales se resuelven por privado. ",
-    "**No compartas contenido ilegal ni peligroso**: No compartas enlaces con riesgo de virus. Mucho menos información personal de otros miembros.",
-    "**Sigue a la mona**: Obligatorio. No se discute. <a:gatobaile:1522089458558828574>",
+    "﹒﹒__#001__ ➜ sé amable. no se tolerará el acoso, los insultos, la discriminación ni los discursos de odio. queremos que este sea un espacio agradable para todos! >-<",
+    "﹒﹒__#002__ ➜ queda estrictamente prohibido compartir imágenes, videos o texto con contenido explícito, sangriento o sexual." ,
+    "﹒﹒__#003__ ➜ cada canal tiene un propósito, usalos correctamente!",
+    "﹒﹒__#004__ ➜ evita enviar mensajes repetitivos y/o con mayúsculas excesivas. tampoco hagas promoción de tus redes o servidores sin permiso del staff.",
+    "﹒﹒__#005__ ➜ evita las discusiones en los canales públicos. las diferencias personales se resuelven en privado. ",
+    "﹒﹒__#006__ ➜ es obligatorio seguir a la monita, no se discute. <a:gatobaile:1522089458558828574>",
 ]
+# URL de la imagen/gif de bienvenida (podés poner una URL directa a un .gif o .png)
+IMAGEN_BIENVENIDA_URL = "https://i.imgur.com/XWufGs8.gif"
 
 
 class Reglas(commands.Cog):
@@ -26,7 +27,7 @@ class Reglas(commands.Cog):
         )
 
         embed = discord.Embed(
-            title="📋 Reglas del servidor",
+            title="﹒﹒reglas del servidor﹐ ❀",
             description=descripcion,
             color=discord.Color.purple(),
         )

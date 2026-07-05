@@ -26,11 +26,11 @@ class Bienvenida(commands.Cog):
         total_miembros = member.guild.member_count
 
         embed = discord.Embed(
-            title="Bienvenid@ a monitos! ( ˶ˆᗜˆ˵ )",
+            title="﹒﹒bienvenid@ a monitos! ( ˶ˆᗜˆ˵ )﹐ ❀",
             description=(
-                f"Hola {member.mention}! Recuerda leer {mencion_reglas} "
-                f"para evitar ser sancionad@. Esperamos que pases un buen rato "
-                f"en nuestro servidor 😊"
+                f"hola {member.mention}! recuerda leer {mencion_reglas} "
+                f"para evitar ser sancionad@. esperamos que pases un buen rato "
+                f"en nuestro servidor ^^"
             ),
             color=discord.Color.purple(),
         )
